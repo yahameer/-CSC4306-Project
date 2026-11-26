@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - NUK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h2>NUK CLEARANCE</h2>
+    <a href="index.html">Home</a>
+</header>
+<main class="login-section">
+<div class="login-container">
+    <div class="login-icon">🎓</div>
+    <h1>Welcome Back</h1>
+    <p class="subtitle">
+        Login to your Student Clearance Account
+    </p>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required>
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-submit">
+            Login to Account
+        </button>
+        <p id="loginMessage"></p>
+    </form>
+    <div class="register-link">
+        Don't have an account?
+        <a href="register.html">Create Account</a>
+    </div>
+</div>
+</main>
+<footer>
+    <p>&copy; 2026 Student Clearance Management System</p>
+    <p>Northwest University Kano</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
