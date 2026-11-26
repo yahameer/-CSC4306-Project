@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Clearance - NUK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <h2>NUK CLEARANCE</h2>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+<main class="clearance-page">
+    <h1>Clearance Application</h1>
+    <p>Complete the form below to submit your clearance request.</p>
+    <form id="clearanceForm" class="clearance-form">
+        <div class="form-group">
+            <label for="matric">Matriculation Number</label>
+            <input type="text" id="matric" name="matric" required>
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="level">Academic Level</label>
+            <select id="level" name="level" required>
+                <option value="">Select Level</option>
+                <option value="100">100 Level</option>
+                <option value="200">200 Level</option>
+                <option value="300">300 Level</option>
+                <option value="400">400 Level</option>
+                <option value="500">500 Level</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="session">Academic Session</label>
+            <select id="session" name="session" required>
+                <option value="">Select Session</option>
+                <option value="2025/2026">2025/2026</option>
+                <option value="2026/2027">2026/2027</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="reason">Additional Information</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Enter any relevant information"></textarea>
+        </div>
+        <button type="submit" class="register-btn">Submit Clearance Application</button>
+        <p id="clearanceMessage"></p>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2026 Northwest University Kano Clearance System.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
